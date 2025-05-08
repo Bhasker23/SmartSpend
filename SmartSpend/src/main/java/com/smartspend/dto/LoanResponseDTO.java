@@ -1,0 +1,23 @@
+package com.smartspend.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class LoanResponseDTO {
+    private Long loanId;
+    private Long memberId;
+    private String memberName;
+    private Double loanAmount;
+    private Double monthlyEmi;
+    private Double outstandingAmount;
+    private String status;
+    private LocalDate startDate;
+}
