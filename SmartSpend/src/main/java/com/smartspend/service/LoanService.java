@@ -12,5 +12,6 @@ public interface LoanService {
     List<LoanResponseDTO> getLoansByMemberId(Long memberId);
 
     LoanResponseDTO getLoanById(Long id);
+
     void closeLoan(Long loanId);
 }

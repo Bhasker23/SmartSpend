@@ -28,9 +28,9 @@ public class Loan {
     private Double interestRate = 1.0; // reducing balance interest
     private LocalDate loanStartDate;
     private Integer tenureInMonths;
-    private Double monthlyEmi;
+    private Double monthlyEmiAmount;
     private Double outstandingAmount;   // This updates monthly
-    private String status;
+    private boolean isActive;
 
     // Useful for tracking EMI per month
     @OneToMany(mappedBy = "loan", cascade = CascadeType.ALL)
